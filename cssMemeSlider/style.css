@@ -66,6 +66,7 @@
   justify-content: center;
   width: 2rem;
   height: 2rem;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 input[class="slider-radio"] {
@@ -123,6 +124,12 @@ input[class="slider-radio"] {
 #radio3:checked ~ .slider .navigation label:nth-child(3):hover .select,
 #radio4:checked ~ .slider .navigation label:nth-child(4):hover .select {
   border: 0.1rem solid #ffffff;
+}
+
+.navigation label:active .select {
+  background-color: #ffffff;
+  border: 0.1rem solid #ffffff;
+  opacity: 0.5;
 }
 
 @media screen and (max-width: 768px) {
