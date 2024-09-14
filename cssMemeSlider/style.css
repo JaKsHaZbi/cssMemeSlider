@@ -1,3 +1,127 @@
-body {
-  background-color: pink;
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
 }
+
+.message {
+  font-size: 1.6rem;
+}
+
+.request > a {
+  font-size: 0.8rem;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 50rem;
+  background-color: #25282a;
+  border: 1.8rem solid #25282a;
+}
+
+.slider-container {
+  border-radius: 0.7rem;
+  overflow: hidden;
+}
+
+.message-container {
+  max-width: 100%;
+  max-height: 6.25rem;
+  overflow: hidden;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
+}
+
+.slides,
+.messages {
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+
+.slide,
+.message {
+  width: 25%;
+  transition: all 0.2s ease;
+  overflow: hidden;
+}
+
+.slides img {
+  width: 100%;
+  height: 100%;
+}
+
+.switcher {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+}
+
+input[class="slider-radio"] {
+  position: relative;
+  visibility: hidden;
+}
+
+.select {
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: #79a9ef;
+  border: 0.1rem solid #79a9ef;
+  border-radius: 100%;
+  transition: 0.2s ease;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.2rem 0 1.6rem 0;
+}
+
+#radio1:checked ~ .slider .start {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .slider .start {
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .slider .start {
+  margin-left: -50%;
+}
+
+#radio4:checked ~ .slider .start {
+  margin-left: -75%;
+}
+
+#radio1:checked ~ .slider .navigation label:nth-child(1) .select,
+#radio2:checked ~ .slider .navigation label:nth-child(2) .select,
+#radio3:checked ~ .slider .navigation label:nth-child(3) .select,
+#radio4:checked ~ .slider .navigation label:nth-child(4) .select {
+  background-color: transparent;
+}
+
+.navigation label:not(:active):hover .select {
+  background-color: rgb(255, 255, 255);
+  border: 0.1rem solid rgb(255, 255, 255);
+}
+
+#radio1:checked ~ .slider .navigation label:nth-child(1):hover .select,
+#radio2:checked ~ .slider .navigation label:nth-child(2):hover .select,
+#radio3:checked ~ .slider .navigation label:nth-child(3):hover .select,
+#radio4:checked ~ .slider .navigation label:nth-child(4):hover .select {
+  border: 0.1rem solid #ffffff;
+}
+

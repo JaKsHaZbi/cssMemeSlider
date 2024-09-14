@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="./normileze.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>CSS Meme Slider</title>
 </head>
+
 <body>
-  <div>Test</div>
+  <input type="radio" class="slider-radio" name="slide-radio" id="radio1" checked>
+  <input type="radio" class="slider-radio" name="slide-radio" id="radio2">
+  <input type="radio" class="slider-radio" name="slide-radio" id="radio3">
+  <input type="radio" class="slider-radio" name="slide-radio" id="radio4">
+
+  <div class="slider center">
+    <div class="slider-container">
+      <div class="slides">
+        <div class="slide start"><img src="./assets/images/mem1.jpg" alt="image"></div>
+        <div class="slide"><img src="./assets/images/mem2.jpg" alt="image"></div>
+        <div class="slide"><img src="./assets/images/mem3.jpg " alt="image"></div>
+        <div class="slide"><img src="./assets/images/mem4.jpg" alt="image"></div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="message-container">
+        <div class="messages">
+          <div class="message start">Ваша собака не кусается?</div>
+          <div class="message">Сидят тревожатся</div>
+          <div class="message">Так блэт</div>
+          <div class="message">Невыносимая тяжесть огромного таланта</div>
+        </div>
+      </div>
+      <div class="navigation">
+        <label class="switcher" for="radio1">
+          <div class="select"></div>
+        </label>
+        <label class="switcher" for="radio2">
+          <div class="select"></div>
+        </label>
+        <label class="switcher" for="radio3">
+          <div class="select"></div>
+        </label>
+        <label class="switcher" for="radio4">
+          <div class="select"></div>
+        </label>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
