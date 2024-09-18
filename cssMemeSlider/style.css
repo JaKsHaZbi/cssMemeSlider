@@ -8,7 +8,7 @@
   font-size: 1.6rem;
 }
 
-.request > a {
+.request>a {
   font-size: 0.8rem;
 }
 
@@ -70,7 +70,6 @@
 }
 
 input[class="slider-radio"] {
-  position: relative;
   visibility: hidden;
 }
 
@@ -91,26 +90,26 @@ input[class="slider-radio"] {
   padding: 1.2rem 0 1.6rem 0;
 }
 
-#radio1:checked ~ .slider .start {
+#radio1:checked~.slider .start {
   margin-left: 0;
 }
 
-#radio2:checked ~ .slider .start {
+#radio2:checked~.slider .start {
   margin-left: -25%;
 }
 
-#radio3:checked ~ .slider .start {
+#radio3:checked~.slider .start {
   margin-left: -50%;
 }
 
-#radio4:checked ~ .slider .start {
+#radio4:checked~.slider .start {
   margin-left: -75%;
 }
 
-#radio1:checked ~ .slider .navigation label:nth-child(1) .select,
-#radio2:checked ~ .slider .navigation label:nth-child(2) .select,
-#radio3:checked ~ .slider .navigation label:nth-child(3) .select,
-#radio4:checked ~ .slider .navigation label:nth-child(4) .select {
+#radio1:checked~.slider .navigation label:nth-child(1) .select,
+#radio2:checked~.slider .navigation label:nth-child(2) .select,
+#radio3:checked~.slider .navigation label:nth-child(3) .select,
+#radio4:checked~.slider .navigation label:nth-child(4) .select {
   background-color: transparent;
 }
 
@@ -119,10 +118,10 @@ input[class="slider-radio"] {
   border: 0.1rem solid rgb(255, 255, 255);
 }
 
-#radio1:checked ~ .slider .navigation label:nth-child(1):hover .select,
-#radio2:checked ~ .slider .navigation label:nth-child(2):hover .select,
-#radio3:checked ~ .slider .navigation label:nth-child(3):hover .select,
-#radio4:checked ~ .slider .navigation label:nth-child(4):hover .select {
+#radio1:checked~.slider .navigation label:nth-child(1):hover .select,
+#radio2:checked~.slider .navigation label:nth-child(2):hover .select,
+#radio3:checked~.slider .navigation label:nth-child(3):hover .select,
+#radio4:checked~.slider .navigation label:nth-child(4):hover .select {
   border: 0.1rem solid #ffffff;
 }
 
@@ -134,13 +133,14 @@ input[class="slider-radio"] {
 
 @media screen and (max-width: 768px) {
   .bottom {
-      flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
+
   .message-container {
-      padding-top: 1rem;
+    padding-top: 1rem;
   }
+
   .message {
-      font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 }
-
